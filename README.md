@@ -102,7 +102,7 @@ The engineered risk score meaningfully separates higher-risk transactions from l
 retail-fraud-detection-sql/
 ├── README.md
 ├── sql/
-│   └── Retail_Fraud_Final_Simplified.sql
+│   └── Retail_Fraud_Detection_Final.sql
 ├── data/
 │   ├── retail_fraud_raw.csv
 │   └── retail_fraud_clean_final.csv
