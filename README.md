@@ -4,7 +4,7 @@ A complete SQL-based fraud detection pipeline - from raw transaction data to a v
 
 ---
 
-## 📌 Business Problem
+## Business Problem
 
 An online retail company is facing rising transaction fraud. This project analyzes transaction-level data to:
 - Detect suspicious transactions and high-risk customers
@@ -14,7 +14,7 @@ An online retail company is facing rising transaction fraud. This project analyz
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source:** [Retail Intelligence: Fraud Detection Dataset](https://www.kaggle.com/datasets/noopurbhatt/retail-intelligence-fraud-detection-dataset) (Kaggle)
 - **Size:** ~100,000 transactions
@@ -38,14 +38,14 @@ Only the following **raw** columns were kept — everything else (frequency, ave
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - **MySQL** (window functions, self-joins, CASE logic, UPDATE...JOIN)
 - MySQL Workbench
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 **1. Data Cleaning**
 - Checked for and handled null values and duplicate transaction IDs
@@ -84,7 +84,7 @@ The engineered risk score meaningfully separates higher-risk transactions from l
 
 ---
 
-## 💡 Key SQL Concepts Demonstrated
+## Key SQL Concepts Demonstrated
 
 - Self-joins for behavioral feature engineering (no external ML/Python needed)
 - Window functions: `LAG()`, `DENSE_RANK()`, `ROW_NUMBER()`
@@ -96,7 +96,7 @@ The engineered risk score meaningfully separates higher-risk transactions from l
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 retail-fraud-detection-sql/
@@ -114,7 +114,7 @@ retail-fraud-detection-sql/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Create the database and raw table (schema included at the top of the SQL script)
 2. Import `data/retail_fraud_raw.csv` into `retail_fraud_raw`
@@ -122,7 +122,7 @@ retail-fraud-detection-sql/
 
 ---
 
-## 🎯 What This Project Demonstrates
+## What This Project Demonstrates
 
 Rather than just running pre-built queries, this project focuses on:
 1. Treating the dataset as raw input and rebuilding behavioral features from scratch
@@ -132,6 +132,6 @@ Rather than just running pre-built queries, this project focuses on:
 
 ---
 
-## 👤 Author
+## Author
 
 *(Bhuwaneshwari Pilare, www.linkedin.com/in/bhuwaneshwari-pilare)*
