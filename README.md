@@ -34,7 +34,7 @@ Only the following **raw** columns were kept — everything else (frequency, ave
 | `merchant_category` | Fashion, Electronics, Travel, etc. |
 | `is_international` | Whether the transaction is cross-border |
 | `account_age_days` | Age of the customer account |
-| `fraud_flag` | Ground truth — confirmed fraud (1) or not (0) |
+| `fraud_flag` | Ground truth - confirmed fraud (1) or not (0) |
 
 ---
 
@@ -70,17 +70,17 @@ Rather than assuming the risk score works, it was checked against the real `frau
 
 | Risk Tier | Actual Fraud Rate |
 |---|---|
-| Medium | 54.2% |
-| Low | 47.4% |
+| Medium | 54.13% |
+| Low | 47.37% |
 
 The engineered risk score meaningfully separates higher-risk transactions from lower-risk ones — confirmed against ground truth, not just assumed.
 
 **4. Key Business Insights**
 
-- Overall fraud rate in the dataset: **~47.5%**
+- Overall fraud rate in the dataset: **~47.51%**
 - Fraud rate is nearly flat across merchant categories (~47–48%), consistent with this being a synthetic dataset with limited real-world correlation
-- Top repeat offender: **9 confirmed fraud transactions**, ~₹1,804 total — a clear blacklist candidate
-- The engineered `fraud_risk` label successfully separates transactions with a higher actual fraud rate (Medium: 54.2%) from the rest (Low: 47.4%)
+- Top repeat offender: **10 confirmed fraud transactions**, ~₹1,609 total — a clear blacklist candidate
+- The engineered `fraud_risk` label successfully separates transactions with a higher actual fraud rate (Medium: 54.13%) from the rest (Low: 47.37%)
 
 ---
 
